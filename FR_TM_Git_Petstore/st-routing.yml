@@ -1,0 +1,10 @@
+kind: Route
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: st-routing
+  namespace: FR_TM_Git_Petstore
+  version: '1.0'
+  tags: []
+spec:
+  default-endpoint:
+    $ref: FR_TM_Git_Petstore:Endpoint-FR_TM_Git_Petstore:1.0

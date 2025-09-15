@@ -1,0 +1,10 @@
+kind: Transport
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: SSL
+  namespace: Git_Library_Transport_SSL
+  version: '1.0'
+  tags: []
+spec:
+  protocol:
+    - https

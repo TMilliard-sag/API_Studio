@@ -1,0 +1,10 @@
+kind: HTTPEndpoint
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: Endpoint-FR_TM_Git_Petstore
+  namespace: FR_TM_Git_Petstore
+  version: '1.0'
+  tags: []
+spec:
+  method: CUSTOM
+  url: http://petstore.swagger.io/v2

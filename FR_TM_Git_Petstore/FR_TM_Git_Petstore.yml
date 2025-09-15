@@ -1,0 +1,13 @@
+kind: api
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: FR_TM_Git_Petstore
+  namespace: FR_TM_Git_Petstore
+  version: '1.0'
+  tags: []
+  type: REST
+spec:
+  api-spec:
+    $path: ./FR_TM_Git_Petstore-spec.json
+  policy-sequence:
+    - $ref: FR_TM_Git_Petstore:policy-seq:1.0
