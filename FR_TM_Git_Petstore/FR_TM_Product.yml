@@ -5,14 +5,12 @@ metadata:
   namespace: FR_TM_Git_Petstore
   version: '1.0'
   tags: []
-  description: ''
+  description: 'Description of Product (aka Package)  ( code only)'
 spec:
   apis:
     - $ref: FR_TM_Git_Petstore:FR_TM_Git_Petstore:1.0
   plans:
     - $ref: FR_TM_Git_Petstore:FR_TM_Freemium_plan:1.0
-    - $ref: FR_TM_Git_Petstore:FR_TM_Freemium_plan:1.0
-    - $ref: FR_TM_Git_Petstore:Freemium plan:1.0
   info:
     contact:
       name: Thierry Milliard
@@ -21,9 +19,4 @@ spec:
     license:
       name: ''
       url: ''
-    termsOfService: Here are the terms of service for this product
-    summary: |-
-      Here is the summary of this product. 
-      Simple one. 
-      One API . 
-      One Freemium plan...
+    termsOfService: 'Terms of Service : Freemium'
