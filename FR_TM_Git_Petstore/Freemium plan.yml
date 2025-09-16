@@ -1,0 +1,22 @@
+kind: plan
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: Freemium plan
+  namespace: FR_TM_Git_Petstore
+  version: '1.0'
+  tags: []
+  description: ''
+spec:
+  qos:
+    withQuota:
+      - $ref: FR_TM_Git_Petstore:Quota-freemium-10-per-month:1.0
+    withRateLimit:
+      - name: Freemium rate limit
+        maxRequest: 2
+        interval: 1m
+        alertMessage: Rate limit exceeded (2 req per mn )
+        alertConfiguration: once
+  pricing:
+    value: 0
+    currency: EUR
+  isApprovalRequired: false

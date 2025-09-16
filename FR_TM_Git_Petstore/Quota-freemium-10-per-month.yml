@@ -1,0 +1,22 @@
+kind: Quota
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: Quota-freemium-10-per-month
+  namespace: FR_TM_Git_Petstore
+  version: '1.0'
+  tags: []
+  description: ''
+spec:
+  maxRequest: '10'
+  interval: 1cm
+  x-webm-config:
+    alertConfiguration:
+      message: Freemium quota overpassed
+      frequency: once
+    notification:
+      enabled: true
+      notifyAfter: '60'
+      message: 60% of quota (10) reached
+      email:
+        - thierry.milliard@ibm.com
+  onLimitReach: block
