@@ -5,7 +5,7 @@ metadata:
   namespace: FR_TM_Git_Petstore
   version: '1.0'
   tags: []
-  description: ''
+  description: 'Here is the description of my Fremium quota'
 spec:
   maxRequest: '10'
   interval: 1cm
