@@ -4,11 +4,12 @@ metadata:
   name: FR_TM_Freemium_plan
   namespace: FR_TM_Git_Petstore
   version: '1.0'
+  description: Description of plan (added metadata)
   tags: []
 spec:
   qos:
     withQuota:
-      - unlimited: {}
+      - $ref: FR_TM_Git_Petstore:Quota-freemium-10-per-month:1.0
   pricing:
     value: 0
     currency: EUR
