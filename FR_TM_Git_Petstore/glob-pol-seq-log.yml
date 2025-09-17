@@ -1,0 +1,10 @@
+kind: PolicySequence
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: glob-pol-seq-log
+  namespace: FR_TM_Git_Petstore
+  version: '1.0'
+  tags: []
+spec:
+  monitoring:
+    - $ref: FR_TM_Git_Petstore:LogPayloadForDebug:1.0

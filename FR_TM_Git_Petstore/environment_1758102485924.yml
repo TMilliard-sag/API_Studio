@@ -1,0 +1,12 @@
+kind: environment
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: environment_testPetstore
+  version: "1.0"
+  namespace: FR_TM_Git_Petstore
+  tags: []
+spec:
+  variables:
+    - key: FR_TM_LocalApp_apikey
+      isSecret: true
+      value: 039af3ba-dbd1-4565-8d34-0371703c22a0

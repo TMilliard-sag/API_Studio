@@ -1,0 +1,8 @@
+kind: TransformResponse
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: Resp-trans-demo
+  namespace: FR_TM_Git_Petstore
+  version: "1.0"
+  tags: []
+spec: {}

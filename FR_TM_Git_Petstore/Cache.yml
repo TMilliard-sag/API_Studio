@@ -1,0 +1,9 @@
+kind: CacheServiceResult
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: Cache
+  namespace: FR_TM_Git_Petstore
+  version: '1.0'
+  tags: []
+spec:
+  ttl: 2m

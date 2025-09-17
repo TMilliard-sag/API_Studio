@@ -11,4 +11,5 @@ spec:
   routing:
     - $ref: FR_TM_Git_Petstore:st-routing:1.0
   monitoring:
-    - $ref: PetstoreTest1:LogAll for demos:1.0
+    - $ref: FR_TM_Git_Petstore:Cache:1.0
+  res-processing: []

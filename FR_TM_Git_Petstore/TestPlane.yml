@@ -3,18 +3,23 @@ apiVersion: api.webmethods.io/beta
 metadata:
   name: TestPlane
   namespace: FR_TM_Git_Petstore
-  version: '1.0'
+  version: "1.0"
   tags: []
 spec:
   api:
-    $ref: 'FR_TM_Git_Petstore:FR_TM_Git_Petstore:1.0'
+    $ref: FR_TM_Git_Petstore:FR_TM_Git_Petstore:1.0
   request:
     - method: GET
       resource: /store/inventory
       headers:
         - key: Content-Type
           value: application/json
+        - key: x-Gateway-APIKey
+          value: ${FR_TM_LocalApp_apikey}
       auth:
         noauth: true
       assertions:
         - $ref: PetstoreTest1:Got 200 OK:1.0
+      parameters: []
+  environment:
+    $ref: FR_TM_Git_Petstore:environment_testPetstore:1.0

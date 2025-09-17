@@ -1,0 +1,20 @@
+kind: GlobalPolicy
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: LogPayloadGlobal Policy
+  namespace: FR_TM_Git_Petstore
+  version: '1.0'
+  tags: []
+spec:
+  filter-api-type:
+    - REST
+  policy-sequence:
+    - $ref: FR_TM_Git_Petstore:glob-pol-seq-log:1.0
+  filter-http-methods:
+    - GET
+    - PUT
+    - POST
+    - HEAD
+    - PATCH
+    - DELETE
+  filter-attributes: "{\n\t\t\"attributeName\": \"API_NAME\",\n\t\t\"operation\": \"STARTS_WITH\",\n\t\t\"value\": \"FR_TM_\"\n\t}"
