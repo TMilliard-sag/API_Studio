@@ -11,6 +11,7 @@ spec:
   routing:
     - $ref: FR_TM_Git_Petstore:st-routing:1.0
     - $ref: FR_TM_Git_Petstore:Mock_Conf-Route:1.0
+    - $ref: FR_TM_Git_Petstore:FR_TM_Mock_Conf-Route:1.0
   monitoring:
     - $ref: FR_TM_Git_Petstore:Cache:1.0
   res-processing: []

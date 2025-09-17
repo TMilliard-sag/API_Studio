@@ -1,7 +1,7 @@
 kind: MockResponse
 apiVersion: api.webmethods.io/beta
 metadata:
-  name: Mock-Response-wyvy8u
+  name: Mock-Response-pet-id
   namespace: default
   version: '1.0'
   tags:
@@ -11,5 +11,7 @@ metadata:
 spec:
   headers: []
   data:
+    - contentType: text/plain
+      content: plain mocked response
     - contentType: application/json
-      content: '{"result":"mocked json payload"}'
+      content: '{"result":"mocked payload response"}'

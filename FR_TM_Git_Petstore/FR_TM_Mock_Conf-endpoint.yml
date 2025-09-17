@@ -1,7 +1,7 @@
 kind: MockEndpoint
 apiVersion: api.webmethods.io/beta
 metadata:
-  name: Mock_Conf-endpoint
+  name: FR_TM_Mock_Conf-endpoint
   namespace: FR_TM_Git_Petstore
   version: '1.0'
   tags: []
@@ -13,4 +13,4 @@ spec:
         defaultResponse:
           '200':
             response:
-              $ref: default:Mock-Response-wyvy8u:1.0
+              $ref: default:Mock-Response-pet-id:1.0
