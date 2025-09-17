@@ -1,0 +1,16 @@
+kind: MockResponse
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: Mock-Response-4czpc8
+  namespace: default
+  version: '1.0'
+  tags:
+    - tag1
+    - tag2
+spec:
+  headers:
+    - key: conditional
+      value: done
+  data:
+    - contentType: text/plain
+      content: conditional mock text

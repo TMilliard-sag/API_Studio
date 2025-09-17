@@ -14,3 +14,8 @@ spec:
           '200':
             response:
               $ref: FR_TM_Git_Petstore:Mock-Response-default-pet-id:1.0
+        conditionalResponse:
+          - condition: $request.query.status equals 'available'
+            statusCode: 201
+            response:
+              $ref: default:Mock-Response-4czpc8:1.0

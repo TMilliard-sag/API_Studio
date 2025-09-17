@@ -1,7 +1,7 @@
 kind: MockResponse
 apiVersion: api.webmethods.io/beta
 metadata:
-  name: Mock-Response-default-pet-id
+  name: Mock-Response-con-pet-id
   namespace: FR_TM_Git_Petstore
   version: '1.0'
   tags:
@@ -11,6 +11,4 @@ spec:
   headers: []
   data:
     - contentType: text/plain
-      content: mocked plain text
-    - contentType: application/json
-      content: '{"result":"mocked payload"}'
+      content: mocked with header toto set to 1
