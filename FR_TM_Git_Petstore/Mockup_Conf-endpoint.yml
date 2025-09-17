@@ -1,0 +1,16 @@
+kind: MockEndpoint
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: Mockup_Conf-endpoint
+  namespace: FR_TM_Git_Petstore
+  version: '1.0'
+  tags: []
+  description: ''
+spec:
+  paths:
+    /pet/{petId}:
+      get:
+        defaultResponse:
+          '200':
+            response:
+              $ref: FR_TM_Git_Petstore:Mock-Response-default-pet-id:1.0

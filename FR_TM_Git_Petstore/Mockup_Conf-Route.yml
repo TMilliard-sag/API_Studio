@@ -1,0 +1,12 @@
+kind: Route
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: Mockup_Conf-Route
+  namespace: FR_TM_Git_Petstore
+  version: '1.0'
+  tags: []
+  description: ''
+spec:
+  mock-endpoint:
+    enabled: true
+    $ref: FR_TM_Git_Petstore:Mockup_Conf-endpoint:1.0
