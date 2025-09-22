@@ -7,3 +7,7 @@ projects:
     description: Project Cyril
     tags: []
     lastUpdated: 1758543285764
+  Library:
+    description: List of presets to be reused in other projects
+    tags: []
+    lastUpdated: 1758543964860
