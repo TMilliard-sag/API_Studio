@@ -1,0 +1,12 @@
+kind: PolicySequence
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: ticketmanagment_policies
+  namespace: FR_CPO
+  version: '1.0'
+  tags: []
+spec:
+  transport:
+    - $ref: FR_CPO:SSL:1.0
+  routing:
+    - $ref: FR_CPO:st-routing:1.0

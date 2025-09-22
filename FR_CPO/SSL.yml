@@ -1,0 +1,11 @@
+kind: Transport
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: SSL
+  namespace: FR_CPO
+  version: '1.0'
+  tags: []
+spec:
+  protocol:
+    - https
+    - http

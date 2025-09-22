@@ -1,0 +1,116 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "1.0",
+        "title": "incident",
+        "description": "API to retreive incidents"
+    },
+    "host": "dev5312404.a-fra-c1.int.ipaas.automation.ibm.com",
+    "basePath": "/integration/restv2/development/flcaa5cd540cf0f5b64ccd48/incident",
+    "schemes": [
+        "https"
+    ],
+    "consumes": [
+        "application/json"
+    ],
+    "produces": [
+        "application/json"
+    ],
+    "paths": {
+        "/incidents": {
+            "get": {
+                "operationId": "incidents_GET_1",
+                "parameters": [],
+                "security": [
+                    {
+                        "_apiKeyAuth": []
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/incidents_GET_response_1"
+                        }
+                    },
+                    "401": {
+                        "description": "Access Denied"
+                    }
+                }
+            }
+        }
+    },
+    "securityDefinitions": {
+        "_apiKeyAuth": {
+            "type": "apiKey",
+            "name": "X-INSTANCE-API-KEY",
+            "in": "header"
+        }
+    },
+    "definitions": {
+        "results": {
+            "type": "object",
+            "properties": {
+                "incident_id_1": {
+                    "type": "string"
+                },
+                "date_detection_1": {
+                    "type": "string"
+                },
+                "date_resolution_1": {
+                    "type": "string"
+                },
+                "localisation_1": {
+                    "type": "string"
+                },
+                "gravite_1": {
+                    "type": "string"
+                },
+                "statut_1": {
+                    "type": "string"
+                },
+                "donnees_brutes_1": {
+                    "type": "string"
+                },
+                "description_1": {
+                    "type": "string"
+                },
+                "seuil_alerte_1": {
+                    "type": "string"
+                },
+                "valeur_mesuree_1": {
+                    "type": "string"
+                },
+                "unite_mesure_1": {
+                    "type": "string"
+                },
+                "batiment_1": {
+                    "type": "string"
+                },
+                "etage_1": {
+                    "type": "string"
+                },
+                "salle_1": {
+                    "type": "string"
+                },
+                "equipement_concerne_1": {
+                    "type": "string"
+                },
+                "categorie_1": {
+                    "type": "string"
+                }
+            }
+        },
+        "incidents_GET_response_1": {
+            "type": "object",
+            "properties": {
+                "results": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/results"
+                    }
+                }
+            }
+        }
+    }
+}
