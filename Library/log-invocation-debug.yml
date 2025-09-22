@@ -1,0 +1,15 @@
+kind: Log
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: log-invocation-debug
+  namespace: Library
+  version: '1.0'
+  tags: []
+spec:
+  logRequestHeaders: true
+  logRequestPayload: true
+  logResponseHeaders: true
+  logResponsePayload: true
+  destination:
+    - api_gateway
+    - dev_portals
