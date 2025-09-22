@@ -8,3 +8,5 @@ metadata:
 spec:
   transport:
     - $ref: Library:SSL-only:1.0
+  monitoring:
+    - $ref: Library:log-invocation-debug:1.0
