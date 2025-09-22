@@ -13,3 +13,4 @@ spec:
   destination:
     - api_gateway
     - dev_portals
+  logGenerationFrequency: always
