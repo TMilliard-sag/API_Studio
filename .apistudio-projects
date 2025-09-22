@@ -3,3 +3,7 @@ projects:
     description: simple Petstore API stored in Github
     tags: []
     lastUpdated: 1757946026190
+  FR_CPO:
+    description: Project Cyril
+    tags: []
+    lastUpdated: 1758543285764
