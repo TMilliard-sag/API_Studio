@@ -1,0 +1,10 @@
+kind: Transport
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: SSL-only
+  namespace: Library
+  version: '1.0'
+  tags: []
+spec:
+  protocol:
+    - https

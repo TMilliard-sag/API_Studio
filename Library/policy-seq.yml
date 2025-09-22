@@ -1,0 +1,10 @@
+kind: PolicySequence
+apiVersion: api.webmethods.io/beta
+metadata:
+  name: policy-seq
+  namespace: Library
+  version: '1.0'
+  tags: []
+spec:
+  transport:
+    - $ref: Library:SSL-only:1.0
